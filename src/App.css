@@ -1,38 +1,73 @@
+/* Universal CSS */
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bluetxt  {
+    color: #012970;;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shorttxt  {
+    font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.vshorttxt  {
+    font-size: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Nav bar CSS */
+.nav__logoimg  {
+    max-height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav__logotitle  {
+    font-size: 26px;
+    font-weight: 500;
 }
+
+.nav__userimg  {
+    max-height: 32px;
+}
+
+.nav__userdropdown  {
+    min-width: 240px;
+}
+
+.nav__badge  {
+    top: 15% !important;
+}
+
+/* Sidebar CSS */
+.sidebar  {
+    transition: 500ms;
+    width: 300px;
+}
+
+.sidebar--hidden  {
+  max-width: 0px;
+  padding: 0 !important;
+  /* overflow: hidden; */
+}
+
+/* Main CSS */
+.dashboard__iconcvr  {
+    height: 64px;
+    width: 64px;
+    font-size: 32px;
+}
+
+.dashboard__iconcvr--blue  {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.dashboard__iconcvr--green  {
+    color: #2eca6a;
+    background: #e0f8e9;
+}
+
+.dashboard__iconcvr--orange  {
+    color: #ff771d;
+    background: #ffecdf;
+}
+
