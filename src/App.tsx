@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
 import "./App.css";
 
+
 function App() {
   const sidebarRef = useRef<HTMLElement>(null);
+  const mainRef=useRef<HTMLElement>(null)
 
   const toggleSidebar = () => {
-    if (sidebarRef.current !== null) {
+    if (sidebarRef.current !== null &&  mainRef.current!==null) {
       sidebarRef.current.classList.toggle("sidebar--hidden");
+      mainRef.current.classList.toggle('main--sidebarvisible');
     }
   };
 
@@ -141,7 +144,7 @@ function App() {
           </div>
         </nav>
       </header>
-      <main className="d-flex">
+      <main className="d-flex main main--sidebarvisible" ref={mainRef}>
         <aside className="sidebar bluetxt p-4 bg-white" ref={sidebarRef}>
           <ul className="list-unstyled">
             <li>
@@ -544,7 +547,8 @@ function App() {
               </ol>
             </nav>
           </div>
-          <div className="d-flex col-8 justify-content-between">
+          <div className="d-flex col-8 flex-wrap">
+            {/* yhjvgfasyvfghvfhbvf */}
             <div className='px-2 col-6 mb-4 pe-3'>
               <div className="card shadow-sm border-0 px-2  pb-2">
                 <div className="card-body">
@@ -608,9 +612,8 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>  
-          </div>
-          <div className='px-2 col-8'>
+            </div> 
+            <div className='px-2 col-12'>
               <div className="card shadow-sm border-0 px-2 pb-2">
               <div className="card-body">
                   <span className="d-flex justify-content-between my-3">
@@ -641,7 +644,12 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div> 
+            <div className="col-12">
+              {/* <LineChart/> */}
             </div>
+          </div>
+         
           
           
         </section>

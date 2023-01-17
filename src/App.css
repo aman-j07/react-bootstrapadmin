@@ -41,15 +41,25 @@
 .sidebar  {
     transition: 500ms;
     width: 300px;
+    position: fixed;
+    left: 0;
 }
 
 .sidebar--hidden  {
-  max-width: 0px;
-  padding: 0 !important;
-  /* overflow: hidden; */
+    left: -300px;
+    padding: 0 !important;
+    overflow: hidden;
 }
 
 /* Main CSS */
+.main  {
+    transition: 500ms;
+}  
+
+.main--sidebarvisible  {
+    padding-left: 300px;
+} 
+
 .dashboard__iconcvr  {
     height: 64px;
     width: 64px;
