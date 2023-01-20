@@ -67,7 +67,6 @@ export const data = {
 };
 
 const LineChart = () => {
-  console.log(data);
   return (
     <>
       <Line options={options} data={data} />

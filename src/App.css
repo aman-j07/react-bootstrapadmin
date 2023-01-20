@@ -56,8 +56,9 @@
     width: 300px;
     position: fixed;
     left: 0;
-    max-height: 100vh;
+    max-height: 95vh;
     overflow-y: scroll;
+    z-index:100;
 }
 
 .sidebar--hidden  {
@@ -74,6 +75,12 @@
 
 .sidebar::-webkit-scrollbar-thumb{
     background-color: #2c4168;
+}
+
+.sidebar__links  {
+    background-color: white !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* Main CSS */
