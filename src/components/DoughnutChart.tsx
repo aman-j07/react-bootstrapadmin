@@ -8,7 +8,7 @@ export const data = {
   labels: ["Search engine", "Direct", "Email", "Union Ads", "Video Ads"],
   datasets: [
     {
-      data: [12, 19, 3, 5, 2, 3],
+      data: [12, 19, 3, 5, 2],
       backgroundColor: [
         "#5470c6",
         "#91cc75",

@@ -31,7 +31,7 @@ export const data = {
   datasets: [
     {
       label: "Allocated Budget",
-      data: [2, 9, 3, 5, 2, 3],
+      data: [5, 9, 6, 4, 1, 8],
       backgroundColor: "#5470c6",
       borderColor: "#5470c6",
       borderWidth: 1,

@@ -1,4 +1,4 @@
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import CardTitle from "./components/CardTitle";
 import LineChart from "./components/LineChart";
@@ -40,7 +40,7 @@ function App() {
               </ol>
             </nav>
           </div>
-          <div className="dashboard__contentparent d-flex align-items-start flex-lg-row flex-column" >
+          <div className="dashboard__contentparent d-flex align-items-start flex-lg-row flex-column">
             <div className="dashboard__contentparent__center d-flex col-lg-8 col-12 flex-wrap">
               <div className="px-0 px-md-2 col-md-6 col-12 mb-4 pe-md-3">
                 <div className="card shadow-sm border-0 px-2 pb-2">
@@ -305,6 +305,12 @@ function App() {
           </div>
         </section>
       </main>
+      <footer className="border-top bluetxt py-4">
+        <div className="copyright">
+          © <strong> AJ </strong> . All Rights Reserved
+        </div>
+        <div className="credits">Designed by Aman</div>
+      </footer>
     </div>
   );
 }
