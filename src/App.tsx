@@ -21,11 +21,11 @@ function App() {
   };
 
   return (
-    <div className="App px-3 px-md-0">
+    <div className="App">
       <NavBar toggleSidebar={toggleSidebar} />
       <main className="d-flex main main--sidebarvisible" ref={mainRef}>
         <SideBar sidebarRef={sidebarRef} />
-        <section className="dashboard px-md-4 py-3 px-0 flex-fill col-12">
+        <section className="dashboard px-md-4 py-3 px-3 flex-fill col-12">
           <div className="px-2 px-md-0">
             <h4 className="bluetxt mb-0 text-start">Dashboard</h4>
             <nav aria-label="breadcrumb">
@@ -109,7 +109,7 @@ function App() {
               </div>
               <div className="px-0 px-md-2 col-12">
                 <div className="card shadow-sm border-0 mb-4">
-                  <div className="card-body">
+                  <div className="card-body overflow-auto">
                     <CardTitle title="Recent Sales" subtitle="Today" />
                     <div className="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
                       <span className="d-flex align-items-center">
@@ -165,7 +165,7 @@ function App() {
               </div>
               <div className="px-0 px-md-2 col-12">
                 <div className="card shadow-sm border-0 mb-4">
-                  <div className="card-body">
+                  <div className="card-body overflow-auto">
                     <CardTitle title="Top Selling" subtitle="Today" />
                     <table className="table bg-white table-borderless shorttxt my-2 text-start">
                       <thead>
