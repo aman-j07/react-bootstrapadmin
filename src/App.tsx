@@ -303,14 +303,14 @@ function App() {
               </div>
             </div>
           </div>
+          <footer className="border-top bluetxt py-4">
+            <div className="copyright">
+              © <strong> AJ </strong> . All Rights Reserved
+            </div>
+            <div className="credits">Designed by Aman</div>
+          </footer>
         </section>
       </main>
-      <footer className="border-top bluetxt py-4">
-        <div className="copyright">
-          © <strong> AJ </strong> . All Rights Reserved
-        </div>
-        <div className="credits">Designed by Aman</div>
-      </footer>
     </div>
   );
 }
