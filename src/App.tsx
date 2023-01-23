@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App px-3 px-md-0">
       <NavBar toggleSidebar={toggleSidebar} />
       <main className="d-flex main main--sidebarvisible" ref={mainRef}>
         <SideBar sidebarRef={sidebarRef} />
@@ -186,7 +186,6 @@ function App() {
                                 />
                               </td>
                               <td className="text-primary fw-bold">
-                                {" "}
                                 Ut inventore ipsa voluptas nulla
                               </td>
                               <td>$64</td>
@@ -201,8 +200,8 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="dashboard__contentparent__right  col-12 col-lg-4 ms-3">
-              <div className="card shadow-sm border-0 col-11 mb-4">
+            <div className="dashboard__contentparent__right  col-12 col-lg-4 ms-lg-3">
+              <div className="card shadow-sm border-0 col-12 col-lg-11 mb-4">
                 <div className="card-body">
                   <CardTitle title="Recent Activity" subtitle="Today" />
                   <div className="dashboard__activity">
@@ -212,7 +211,7 @@ function App() {
                         <i className="bi bi-circle-fill shorttxt dashboard__activitystepper text-success"></i>
                       </div>
                       <span className="ms-4">
-                        Quia quae rerum <strong>explicabo officiis</strong>{" "}
+                        Quia quae rerum <strong>explicabo officiis</strong>
                         beatae
                       </span>
                     </div>
@@ -265,19 +264,19 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card shadow-sm border-0 col-11 mb-4">
+              <div className="card shadow-sm border-0 col-12 col-lg-11 mb-4">
                 <div className="card-body">
                   <CardTitle title="Budget Report" subtitle="This Month" />
                   <RadarChart />
                 </div>
               </div>
-              <div className="card shadow-sm border-0 col-11 mb-4">
+              <div className="card shadow-sm border-0 col-12 col-lg-11 mb-4">
                 <div className="card-body">
                   <CardTitle title="Website Traffic" subtitle="Today" />
                   <PieChart />
                 </div>
               </div>
-              <div className="card shadow-sm border-0 col-11 mb-4">
+              <div className="card shadow-sm border-0 col-12 col-lg-11 mb-4">
                 <div className="card-body">
                   <CardTitle title="News & Updates" subtitle="Today" />
                   {arr5.map((ele) => {
